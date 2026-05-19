@@ -12,18 +12,27 @@ export default function Services() {
       <div className="services-grid">
 
         <div className="card">
-          <h3>Limpieza exterior</h3>
-          <p>Lavado completo con espuma activa y limpieza de llantas.</p>
+          <h3>Servicio básico</h3>
+          <p>
+            Incluye una limpieza interior y exterior sencilla, pensada para el mantenimiento del vehículo.
+          </p>
+          <span>2 horas aproximadamente · 60€</span>
         </div>
 
         <div className="card">
-          <h3>Limpieza interior</h3>
-          <p>Aspirado profundo, limpieza de plásticos y cristales.</p>
+          <h3>Servicio estándar</h3>
+          <p>
+            Incluye una limpieza completa interior y exterior con más detalle y mejor acabado.
+          </p>
+          <span>3 horas aproximadamente · 100€</span>
         </div>
 
         <div className="card">
-          <h3>Detailing completo</h3>
-          <p>Limpieza premium interior y exterior con acabado profesional.</p>
+          <h3>Servicio premium</h3>
+          <p>
+            Incluye un detailing más exhaustivo con tratamientos específicos y mayor dedicación.
+          </p>
+          <span>4-5 horas aproximadamente · 150€</span>
         </div>
 
         {/* CARD DESPLEGABLE */}
@@ -32,10 +41,10 @@ export default function Services() {
           onClick={() => setOpen(!open)}
         >
 
-          <h3>Plan personalizado</h3>
+          <h3>Servicio personalizado</h3>
 
           <p>
-            Diseñamos un servicio a medida según las necesidades de tu vehículo.
+            Diseñamos un servicio totalmente adaptado a las necesidades de tu vehículo.
           </p>
 
           <div className="dropdown-content">
@@ -47,7 +56,7 @@ export default function Services() {
               <li>Protección de plásticos</li>
               <li>Lavado premium</li>
               <li>Eliminación de olores</li>
-              <li>Limpieza de tapicería profunda</li>
+              <li>Limpieza profunda de tapicería</li>
             </ul>
 
           </div>
@@ -59,6 +68,11 @@ export default function Services() {
         </div>
 
       </div>
+
+       {/* LETRA PEQUEÑA */}
+      <p className="services-note">
+        * El desplazamiento se cobra aparte según la ubicación.
+      </p>
 
     </section>
   );
